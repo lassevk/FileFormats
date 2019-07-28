@@ -31,6 +31,20 @@
       <EmbeddedResource Include="Identifiers\Images\Samples\sample.png" />
       <None Remove="Identifiers\Images\Samples\sample.tif" />
       <EmbeddedResource Include="Identifiers\Images\Samples\sample.tif" />
+      <None Remove="Identifiers\Archives\Samples\sample.7z" />
+      <EmbeddedResource Include="Identifiers\Archives\Samples\sample.7z" />
+      <None Remove="Identifiers\Archives\Samples\sample.bz2" />
+      <EmbeddedResource Include="Identifiers\Archives\Samples\sample.bz2" />
+      <None Remove="Identifiers\Archives\Samples\sample.gz" />
+      <EmbeddedResource Include="Identifiers\Archives\Samples\sample.gz" />
+      <None Remove="Identifiers\Archives\Samples\sample.tar" />
+      <EmbeddedResource Include="Identifiers\Archives\Samples\sample.tar" />
+      <None Remove="Identifiers\Archives\Samples\sample.wim" />
+      <EmbeddedResource Include="Identifiers\Archives\Samples\sample.wim" />
+      <None Remove="Identifiers\Archives\Samples\sample.xz" />
+      <EmbeddedResource Include="Identifiers\Archives\Samples\sample.xz" />
+      <None Remove="Identifiers\Archives\Samples\sample.zip" />
+      <EmbeddedResource Include="Identifiers\Archives\Samples\sample.zip" />
     </ItemGroup>
 
 </Project>
