@@ -7,7 +7,7 @@ using FileFormats.Formats.Images;
 
 namespace FileFormats.Identifiers.Images
 {
-    public class PngFileFormatFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
+    public class PngFileFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
     {
         private static readonly byte?[] _Pattern = { 0x89, (byte)'P', (byte)'N', (byte)'G', (byte)'\r', (byte)'\n', 0x1a, (byte)'\n' };
 

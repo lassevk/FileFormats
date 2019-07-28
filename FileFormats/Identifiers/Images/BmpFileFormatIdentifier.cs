@@ -7,7 +7,7 @@ using FileFormats.Formats.Images;
 
 namespace FileFormats.Identifiers.Images
 {
-    public class BmpFileFormatFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
+    public class BmpFileFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
     {
         private static readonly byte?[] _Pattern = { (byte)'B', (byte)'M' };
 

@@ -7,7 +7,7 @@ using FileFormats.Formats.Images;
 
 namespace FileFormats.Identifiers.Images
 {
-    public class TiffFileFormatFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
+    public class TiffFileFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
     {
         private static readonly byte?[] _Pattern1 = { (byte)'I', (byte)'I', 0x2a, 0x00 };
         private static readonly byte?[] _Pattern2 = { (byte)'M', (byte)'M', 0x00, 0x2a };

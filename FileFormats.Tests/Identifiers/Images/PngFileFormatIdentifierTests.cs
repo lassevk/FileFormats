@@ -14,7 +14,7 @@ namespace FileFormats.Tests.Identifiers.Images
         [Test]
         public void TryIdentify_PngImage_ReturnsIdentifiedType()
         {
-            var identifier = new PngFileFormatFormatIdentifier();
+            var identifier = new PngFileFormatIdentifier();
             var fileContents = LoadFile("Samples.sample.png");
 
             FileFormat format = identifier.TryIdentify(fileContents, Enumerable.Empty<object>());
@@ -25,7 +25,7 @@ namespace FileFormats.Tests.Identifiers.Images
         [Test]
         public void TryIdentify_JpegImage_ReturnsNull()
         {
-            var identifier = new PngFileFormatFormatIdentifier();
+            var identifier = new PngFileFormatIdentifier();
             var fileContents = LoadFile("Samples.sample.jpg");
 
             FileFormat format = identifier.TryIdentify(fileContents, Enumerable.Empty<object>());
@@ -36,7 +36,7 @@ namespace FileFormats.Tests.Identifiers.Images
         [Test]
         public void TryIdentify_PngImage_HasCorrectTraits()
         {
-            var identifier = new PngFileFormatFormatIdentifier();
+            var identifier = new PngFileFormatIdentifier();
             var fileContents = LoadFile("Samples.sample.png");
 
             FileFormat format = identifier.TryIdentify(fileContents, Enumerable.Empty<object>());

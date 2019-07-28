@@ -7,7 +7,7 @@ using FileFormats.Formats.Images;
 
 namespace FileFormats.Identifiers.Images
 {
-    public class JfifFileFormatFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
+    public class JfifFileFormatIdentifier : GenericFileFormatIdentifier, IFileFormatIdentifier
     {
         private static readonly byte?[] _Pattern = { 0xff, 0xd8 };
 

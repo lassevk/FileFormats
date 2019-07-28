@@ -18,7 +18,7 @@ namespace FileFormats.Tests.Identifiers.Images
         [TestCase("Samples.sample-24-bit.bmp")]
         public void TryIdentify_BmpImage_ReturnsIdentifiedType(string sampleName)
         {
-            var identifier = new BmpFileFormatFormatIdentifier();
+            var identifier = new BmpFileFormatIdentifier();
             var fileContents = LoadFile(sampleName);
 
             FileFormat format = identifier.TryIdentify(fileContents, Enumerable.Empty<object>());
@@ -29,7 +29,7 @@ namespace FileFormats.Tests.Identifiers.Images
         [Test]
         public void TryIdentify_JpegImage_ReturnsNull()
         {
-            var identifier = new BmpFileFormatFormatIdentifier();
+            var identifier = new BmpFileFormatIdentifier();
             var fileContents = LoadFile("Samples.sample.jpg");
 
             FileFormat format = identifier.TryIdentify(fileContents, Enumerable.Empty<object>());
@@ -44,7 +44,7 @@ namespace FileFormats.Tests.Identifiers.Images
         [TestCase("Samples.sample-24-bit.bmp")]
         public void TryIdentify_BmpImage_HasCorrectTraits(string sampleName)
         {
-            var identifier = new BmpFileFormatFormatIdentifier();
+            var identifier = new BmpFileFormatIdentifier();
             var fileContents = LoadFile(sampleName);
 
             FileFormat format = identifier.TryIdentify(fileContents, Enumerable.Empty<object>());
