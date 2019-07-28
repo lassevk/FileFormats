@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageVersion>0.1.0</PackageVersion>
+        <Title>File Format Identifier library</Title>
+        <Authors>Lasse Vågsæther Karlsen</Authors>
+        <Description>Identifies the file format of a file/stream/byte span</Description>
+        <Copyright>(C) 2019 Lasse Vågsæther Karlsen</Copyright>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Memory" Version="4.5.3" />
+    </ItemGroup>
+
+</Project>
